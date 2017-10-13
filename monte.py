@@ -1,3 +1,4 @@
+
 import random
 
 
@@ -25,10 +26,10 @@ def monte():
   iterations = int(input("Enter the amount of iterations: "))
   in_circle = 0
   for i in range(1,iterations):
-    x = random.randrange(0,square_size)
-    y = random.randrange(0,square_size)
-    if ((x**2)+(y**2))<=r**2:
+    x = random.randrange(0,r)
+    y = random.randrange(0,r)
+    if ((x**2)+(y**2))<(r**2):
       in_circle = in_circle + 1
-  pi = 4 * (in_circle / iterations)
+  pi = ((4 * in_circle) / iterations)
   print("Pi is: ", pi)
     
