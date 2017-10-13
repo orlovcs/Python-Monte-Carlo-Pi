@@ -32,7 +32,7 @@ def monte():
       x = random.randrange(0,int(r))
       y = random.randrange(0,int(r))
       iterations = iterations + 1
-      if ((x*2)+(y2))<(r*2):
+      if ((x**2)+(y**2))<(r**2):
         in_circle = in_circle + 1
       pi = ((4 * in_circle) / iterations)
       print("Pi is: ", pi)
