@@ -1,4 +1,3 @@
-
 import random
 
 
@@ -23,13 +22,19 @@ def monte():
   
   print("r is equal to ",r)
   print("The area of the square is ", 4*(r**2))
-  iterations = int(input("Enter the amount of iterations: "))
+ # iterations = int(input("Enter the amount of iterations: "))
   in_circle = 0
-  for i in range(1,iterations):
-    x = random.randrange(0,r)
-    y = random.randrange(0,r)
-    if ((x**2)+(y**2))<(r**2):
-      in_circle = in_circle + 1
-  pi = ((4 * in_circle) / iterations)
-  print("Pi is: ", pi)
-    
+  iterations = 0
+
+
+  try:
+    while True:
+      x = random.randrange(0,int(r))
+      y = random.randrange(0,int(r))
+      iterations = iterations + 1
+      if ((x*2)+(y2))<(r*2):
+        in_circle = in_circle + 1
+      pi = ((4 * in_circle) / iterations)
+      print("Pi is: ", pi)
+  except KeyboardInterrupt:
+    pass
